@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- TAILWIND -->
+    <link href="src/output.css" rel="stylesheet" />
+    <title>Register</title>
+  </head>
+  <body class="h-full font-poppins">
+    <!-- <form action="registro.php" method="post">
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" required /><br /><br />
+
+      <label for="apellido">Apellido</label>
+      <input type="text" name="apellido" id="apellido" required /><br /><br />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required /><br /><br />
+
+      <label for="password">Contraseña</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required
+      /><br /><br />
+
+      <label for="password2">Confirmar Contraseña</label>
+      <input
+        type="password"
+        name="password2"
+        id="password2"
+        required
+      /><br /><br />
+
+      <label for="genero">Genero</label>
+      <select name="genero" id="genero" required>
+        <option value="Masculino">Masculino</option>
+        <option value="Femenino">Femenino</option></select
+      ><br /><br />
+
+      <input type="submit" value="Registrarse" />
+    </form> -->
+
+    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+      <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+        <img
+          class="mx-auto h-20 w-auto"
+          src="img/sefutbol-logo.png"
+          alt="Your Company"
+        />
+        <h2
+          class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900"
+        >
+          <!-- #e4002b -->
+          Regístrate
+        </h2>
+      </div>
+      <form class="max-w-md mx-auto" action="registro.php" method="post">
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#e4002b] peer"
+            placeholder=""
+          />
+          <label
+            for="email"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#e4002b] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Email</label
+          >
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#e4002b] peer"
+            placeholder=""
+          />
+          <label
+            for="password"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#e4002b] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Contraseña</label
+          >
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="password"
+            name="confirmarPassword"
+            id="confirmarPassword"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#e4002b] peer"
+            placeholder=""
+          />
+          <label
+            for="confirmarPassword"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#e4002b] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Confirmar contraseña</label
+          >
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-6">
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#e4002b] peer"
+              placeholder=""
+            />
+            <label
+              for="floating_first_name"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#e4002b] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Nombre</label
+            >
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#e4002b] peer"
+              placeholder=""
+            />
+            <label
+              for="floating_last_name"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-[#e4002b] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Apellido</label
+            >
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          class="text-white bg-[#e4002b] hover:bg-[#96001e] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center"
+        >
+          Submit
+        </button>
+      </form>
+      <p class="mt-10 text-center text-sm text-gray-500">
+        Ya tienes cuenta?
+        <a
+          href="login.html"
+          class="font-semibold leading-6 text-[#e4002b] hover:text-[#96001e]"
+          >Inicia Sesión</a
+        >
+      </p>
+    </div>
+  </body>
+</html>
