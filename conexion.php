@@ -1,7 +1,7 @@
 <?php
 
 $direccionservidor = "localhost";
-$baseDatos = "InfoFIFA";
+$baseDatos = "spaininfo";
 $usuario = "root";
 $contrasena = "";
 
